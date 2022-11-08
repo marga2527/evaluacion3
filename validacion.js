@@ -132,7 +132,7 @@ function validar_codigoP(){
 
 function validar_region(){
     var region = document.getElementById("region").value;
-    var div = document.getElementById("msj-region");
+    var div = document.getElementById("msj_region");
     if(region != "seleccione su region"){
         div.innerHTML = "";
         return true;
@@ -145,7 +145,7 @@ function validar_region(){
 
 function validar_comuna(){
     var comuna = document.getElementById("comuna").value;
-    var div = document.getElementById("msj-comuna");
+    var div = document.getElementById("msj_comuna");
     if(comuna != "seleccione su comuna"){
         div.innerHTML = "";
         return true;
