@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Formulario</title>
+    </head>
+    
+    <body>
+        <div class="container p-3">
+            <form action="destino.php" class="row g-3" onsubmit="return validar()">
+                <H4>Ingrese sus Datos para el Registro</H4>
+                <div class="col-md-4">
+                    <label class="form-label">Email</label>
+                    <input id="email" class="form-control">
+                    <div id="msj-email"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Contraseña</label>
+                    <input id="password" type="password" class="form-control">
+                    <div id="msj-passw"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Reingrese la contraseña</label>
+                    <input id="re-password" type="password" class="form-control">
+                    <div id="msj-repassw"></div>
+            
+                </div>
+                <h4> Ingrese Sus Datos Personales </h4>
+                <div class="col-4">
+                    
+                    <label class="form-label">Dirección</label>
+                    <input class="form-control" id="direccion" placeholder="Picarte3000">
+                    <div id="msj-direccion"></div>
+                </div>
+                <div class="col-4">
+                    <label class="form-label">Codigo Postal</label>
+                    <input class="form-control" id="postal" placeholder="5090000">
+                    <div id="msj-postal"></div>
+                </div>
+
+                <div class="col-4">
+                    <label class="form-label">Teléfono Movil</label>
+                    <input type="text" class="form-control" id="movil"placeholder="959655088">
+                    <div id="msj-movil"></div>
+                    
+                </div>
+
+                <div class="col-4">
+                    <label class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="Ciudad" placeholder="Valdivia">
+                    <div id="msj-ciudad"></div>
+                </div>
+               
+                <div class="col-md-12">
+                    <label for="comuna" class="form-label">Comuna</label>
+                    <select id="comuna" class="form-select">
+                        <option selected>Elija una comuna</option>
+                        <option>Valdivia</option>
+                        <option>Paillaco</option>
+                        <option>San Jose de la Mariquina</option>
+                        <option>Los Lagos</option>
+                        <option>Corral</option>
+                        <option>Mafil</option>
+                        <option>Panguipulli</option>
+                        <option>Lanco</option>
+                    </select>
+                    <div id="msj_comuna"></div>
+
+                <div class="col-md-12">
+                    <label for="region" class="form-label">Región</label>
+                    <select id="region" class="form-select">
+                        <option selected>Elija una region</option>
+                        <option>I Región de Tarapacá</option>
+                        <option>II Región de Antofagasta</option>
+                        <option>III Región de Atacama</option>
+                        <option>IV Región de Coquimbo</option>
+                        <option>V Región de Valparaíso</option>
+                        <option>VI Región del Libertador General Bernardo O’Higgins</option>
+                        <option>VII Región del Maule</option>
+                        <option>VIII Región del Biobío</option>
+                        <option>IX Región de La Araucanía</option>
+                        <option>X Región de Los Lagos</option>
+                        <option>XI Región Aysén del General Carlos Ibáñez del Campo</option>
+                        <option> II Región de Magallanes y Antártica Chilena</option>
+                        <option>Región Metropolitana de Santiago</option>
+                        <option>XIV Región de Los Ríos</option>
+                        <option>XV Región de Arica y Parinacota</option>
+                        <option>XVI Región de Ñuble</option>
+                    </select>
+                    <div id="msj_region"></div>
+                    <br><br>
+                    <div class="col-6">
+                        <label class="form-label">Ingrese sus aficiones</label>
+                        <input type="text" class="form-control" id="aficiones" placeholder="Caminar">
+                        <div id="msj-aficiones"></div>
+                    </div>
+                    <br>
+
+                    <br>
+                    <div class="col-8">
+                        <label class="form-label">Ingrese su pagina web de preferencia</label>
+                        <input type="url" name="pagw" value="" placeholder="https://portales.inacap.cl/"">
+                        <div id="msj-pagw"></div>
+                    </div>
+                    <br>
+                
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check">
+                        <label class="form-check-label" for="check">
+                            Acepto las condiciones
+                        </label>
+                    </div>
+                </div><br>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+        
+        <script src="validacion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    
+    
+</html>
